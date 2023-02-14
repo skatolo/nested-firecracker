@@ -5,6 +5,9 @@ jobs:
   vm-run:
     runs-on: actuated
     steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
       - name: Install arkade
         uses: alexellis/setup-arkade@v2
       - name: Install firecracker
