@@ -1,0 +1,13 @@
+name: vm-run
+
+on: push
+jobs:
+  vm-run:
+    runs-on: actuated
+    steps:
+      - name: Install arkade
+        uses: alexellis/setup-arkade@v2
+      - name: Install firecracker
+        run: arkade system install firecracker
+      - name: Run microVM
+        run: ./run-vm.sh
