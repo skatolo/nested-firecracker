@@ -8,6 +8,6 @@ jobs:
       - name: Install arkade
         uses: alexellis/setup-arkade@v2
       - name: Install firecracker
-        run: arkade system install firecracker
+        run: sudo arkade system install firecracker
       - name: Run microVM
-        run: ./run-vm.sh
+        run: sudo ./run-vm.sh
