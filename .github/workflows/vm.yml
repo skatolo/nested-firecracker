@@ -14,3 +14,4 @@ jobs:
         run: sudo arkade system install firecracker
       - name: Run microVM
         run: sudo ./run-vm.sh
+        
